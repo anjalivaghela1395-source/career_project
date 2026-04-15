@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Career Recommendation System</title>
+
+<style>
+
+body{
+
+background-image:url("{% static 'images/login.jpg' %}");
+background-size:cover;
+font-family:Arial;
+text-align:center;
+margin-top:100px;
+
+}
+
+.box{
+
+background:burlywood;
+width:300px;
+margin:auto;
+padding:30px;
+border-radius:10px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h2>Career Recommendation System</h2>
+
+<form method="post">
+{% csrf_token %}
+
+<input type="text" placeholder="Username"><br><br>
+
+<input type="password" placeholder="Password"><br><br>
+
+<button type="submit">Login</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
